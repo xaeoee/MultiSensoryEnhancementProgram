@@ -19,11 +19,11 @@ abstract class AppValues {
   // static const int defaultDebounceTimeInMilliSeconds = 1000;
   // static const int defaultThrottleTimeInMilliSeconds = 500;
   static const  Map<String, dynamic> fileData = {
-    "pictograms": ['train', 'home', 'instrument', 'HomeAppliance', 'dinosaur', 'Bug', 'car'],
+    "pictograms": ['train', 'home', 'instrument', 'HomeAppliance', 'dinosaur', 'Bug', 'car', "seaAnimals", "landmark", "zoo", "job", "furniture"],
     "levelTitle": ["Level 1", "Level 1+", "Level 2", "Level 2+", "Level 3", "Level 3+"],
 
     "level": ["lv1", "lv1+", "lv2", "lv2+", "lv3", "lv3+"],
-    "category": ["기차", "집", "악기", "가전제품", "공룡", "곤충", "바퀴 달린 자동차"],
+    "category": ["기차", "집", "악기", "가전제품", "공룡", "곤충", "바퀴 달린 자동차", "바다 동물", "랜드마크", "동물원", "직업과 알맞은 물건", "가구"],
     "content": [
       [
         {
@@ -241,6 +241,161 @@ abstract class AppValues {
           "imageNumber": 15,
           "hints": ["st3_h1.png", "st6_h1.png", "st7_h1.png", "st7_h2.png", "st11_h1.png", "st11_h2.png"],
           "name": "덤프트럭"
+        }
+      ], [
+        {
+          "imageNumber": 3,
+          "hints": [],
+          "name": "해마"
+        },
+        {
+          "imageNumber": 6,
+          "hints": [],
+          "name": "날치"
+        },
+        {
+          "imageNumber": 8,
+          "hints": [],
+          "name": "거북이"
+        },
+        {
+          "imageNumber": 9,
+          "hints": ["st3_h1.png", "st4_h1.png", "st7_h1.png"],
+          "name": "가오리"
+        },
+        {
+          "imageNumber": 14,
+          "hints": ["st7_h1.png", "st8_h1.png", "st9_h1.png", "st13_h1.png", "st14_h1.png"],
+          "name": "초롱아귀"
+        },
+        {
+          "imageNumber": 15,
+          "hints": ["st5_h1.png", "st8_h1.png"],
+          "name": "문어"
+        }
+      ], [
+        {
+          "imageNumber": 4,
+          "hints": [],
+          "name": "빅벤"
+        },
+        {
+          "imageNumber": 5,
+          "hints": [],
+          "name": "마리나베이"
+        },
+        {
+          "imageNumber": 7,
+          "hints": ["st5_h1.png", "st5_h2.png", "st5_h3.png", "st8_h1.png"],
+          "name": "숭례문"
+        },
+        {
+          "imageNumber": 8,
+          "hints": ["st5_h1.png", "st5_h2.png", "st5_h3.png", "st8_h1.png"],
+          "name": "에펠탑"
+        },
+        {
+          "imageNumber": 10,
+          "hints": ["st3_h1.png", "st6_h1.png", "st8_h1.png"],
+          "name": "스핑크스"
+        },
+        {
+          "imageNumber": 14,
+          "hints": ["st11_h1.png"],
+          "name": "금문교"
+        }
+      ], [
+        {
+          "imageNumber": 3,
+          "hints": [],
+          "name": "두더지"
+        },
+        {
+          "imageNumber": 6,
+          "hints": ["st6_h1.png"],
+          "name": "토끼"
+        },
+        {
+          "imageNumber": 7,
+          "hints": ["st3_h1.png"],
+          "name": "플라밍고"
+        },
+        {
+          "imageNumber": 8,
+          "hints": ["st1_h1.png", "st2_h1.png", "st4_h1.png", "st5_h1.png"],
+          "name": "코브라"
+        },
+        {
+          "imageNumber": 10,
+          "hints": ["st6_h1.png"],
+          "name": "코끼리"
+        },
+        {
+          "imageNumber": 13,
+          "hints": [],
+          "name": "캥거루"
+        }
+      ], [
+        {
+          "imageNumber": 5,
+          "hints": [],
+          "name": "망치"
+        },
+        {
+          "imageNumber": 5,
+          "hints": [],
+          "name": "주사기"
+        },
+        {
+          "imageNumber": 6,
+          "hints": ["st3_h1.png"],
+          "name": "칼"
+        },
+        {
+          "imageNumber": 6,
+          "hints": [],
+          "name": "삽"
+        },
+        {
+          "imageNumber": 8,
+          "hints": ["st3_h1.png", "st4_h1.png"],
+          "name": "총"
+        },
+        {
+          "imageNumber": 11,
+          "hints": ["st1_h1.png", "st6_h1.png"],
+          "name": "캥거루"
+        }
+      ], [
+        {
+          "imageNumber": 4,
+          "hints": [],
+          "name": "시계"
+        },
+        {
+          "imageNumber": 5,
+          "hints": [],
+          "name": "옷걸이"
+        },
+        {
+          "imageNumber": 7,
+          "hints": [],
+          "name": "우주선"
+        },
+        {
+          "imageNumber": 11,
+          "hints": ["st6_h1.png"],
+          "name": "액자"
+        },
+        {
+          "imageNumber": 9,
+          "hints": [],
+          "name": "책걸상"
+        },
+        {
+          "imageNumber": 12,
+          "hints": ["st4_h1.png", "st7_h1.png"],
+          "name": "2층침대"
         }
       ]
     ]
