@@ -11,11 +11,14 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  // build메소드는 구현한 UI위젯들을 화면에 출력될 수 있도록 리턴해준다.
   @override
+  // 여기서 context는 이 MyApp을 부르는 부모 위젯의 위치 정보를 담고 있다.
   Widget build(BuildContext context) {
     return MaterialApp(
         title: '다감각 향상 프로그램',
         debugShowCheckedModeBanner: false,
+        // initialRoute는 멀티 페이지 이동을 할때, 화면에 제일 처음 출력되는 라우트를 불러오는 역할을 한다.
         initialRoute: '/main',
         routes: {
           '/main': (context) => const MainPage(),

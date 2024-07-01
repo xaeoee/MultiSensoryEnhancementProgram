@@ -47,6 +47,7 @@ class CRMImgButton extends StatelessWidget {
                     Center(
                       child: CRMText(
                         textContent: title,
+                        // 테마뷰에서 이미지 눌렀을때 나오는 제목 크기.
                         fontSize: 40,
                         fontStyle: AppTextThemes.cookieRunOrangeStyle,
                       ),
@@ -88,7 +89,7 @@ class CRMImgButton extends StatelessWidget {
                                         ),
                                         CRMText(
                                           textContent: AppValues.fileData['content'][imageIdx][index]['name'] ?? '',
-                                          fontSize: 17,
+                                          fontSize: 14,
                                           fontStyle: AppTextThemes.cookieRunWhiteStyle,
                                         ),
                                       ],
@@ -153,7 +154,7 @@ class CRMImgButton extends StatelessWidget {
               SizedBox(height: 10),
               CRMText(
                 textContent: title,
-                fontSize: 20,
+                fontSize: 15,
                 fontStyle: AppTextThemes.cookieRunStyle,
               ),
             ],

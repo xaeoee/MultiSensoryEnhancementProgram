@@ -254,35 +254,67 @@ class _ContentsPageState extends State<ContentsPage>{
                 ],
               ),
             ),
+            // Row(
+            //   mainAxisAlignment: MainAxisAlignment.center,
+            //   children: [
+            //     for (var i = 0; i < imageList.length; i++)
+            //       Padding(
+            //         padding: const EdgeInsets.all(3.0), // 버튼 간 간격을 주기 위한 패딩
+            //         child: TextButton(
+            //           style: TextButton.styleFrom(
+            //             backgroundColor: i == _current ? AppColors.gray700 : AppColors.gray100, // 선택된 항목과 그렇지 않은 항목의 배경색
+            //             shape: RoundedRectangleBorder(
+            //               borderRadius: BorderRadius.circular(8), // 모서리 둥근 정도
+            //             ),
+            //             minimumSize: Size(35, 35), // 버튼의 최소 크기를 설정하여 정사각형 모양 유지
+            //             maximumSize: Size(35, 35),
+            //             fixedSize: Size(33, 33),
+            //           ),
+            //           onPressed: () => setIdx(i),
+            //           child: Text(
+            //             "${i + 1}",
+            //             style: TextStyle(
+            //               fontFamily: 'Maplestory',
+            //               color: i == _current ? AppColors.white: AppColors.gray500, // 텍스트 색상
+            //               fontSize: 15,
+            //               fontWeight: FontWeight.bold,
+            //             ),
+            //           ),
+            //         ),
+            //       ),
+            //   ].toList(),
+            // ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 for (var i = 0; i < imageList.length; i++)
                   Padding(
-                    padding: const EdgeInsets.all(3.0), // 버튼 간 간격을 주기 위한 패딩
-                    child: TextButton(
-                      style: TextButton.styleFrom(
-                        backgroundColor: i == _current ? AppColors.gray700 : AppColors.gray100, // 선택된 항목과 그렇지 않은 항목의 배경색
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8), // 모서리 둥근 정도
+                    padding: const EdgeInsets.all(4.0), // 버튼 간 간격을 약간 늘림
+                    child: Container(
+                      width: 40, // 버튼의 너비를 늘림
+                      height: 40, // 버튼의 높이를 늘림
+                      child: TextButton(
+                        style: TextButton.styleFrom(
+                          backgroundColor: i == _current ? AppColors.gray700 : AppColors.gray100,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10), // 모서리를 더 둥글게 만듦
+                          ),
+                          padding: EdgeInsets.zero, // 내부 패딩을 제거하여 숫자가 중앙에 오도록 함
                         ),
-                        minimumSize: Size(35, 35), // 버튼의 최소 크기를 설정하여 정사각형 모양 유지
-                        maximumSize: Size(35, 35),
-                        fixedSize: Size(33, 33),
-                      ),
-                      onPressed: () => setIdx(i),
-                      child: Text(
-                        "${i + 1}",
-                        style: TextStyle(
-                          fontFamily: 'Maplestory',
-                          color: i == _current ? AppColors.white: AppColors.gray500, // 텍스트 색상
-                          fontSize: 15,
-                          fontWeight: FontWeight.bold,
+                        onPressed: () => setIdx(i),
+                        child: Text(
+                          "${i + 1}",
+                          style: TextStyle(
+                            fontFamily: 'Maplestory',
+                            color: i == _current ? AppColors.white : AppColors.gray500,
+                            fontSize: 18, // 글자 크기를 약간 키움
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       ),
                     ),
                   ),
-              ].toList(),
+              ],
             ),
             SizedBox(height: 20)
           ],
