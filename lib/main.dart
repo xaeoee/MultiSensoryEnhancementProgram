@@ -1,24 +1,86 @@
+// import 'package:flutter/material.dart';
+// import 'package:multi_sensory_enhancement_program/app/view/main_page/main_page.dart';
+// import 'package:multi_sensory_enhancement_program/app/view/main_page/category_page.dart';
+// import 'package:multi_sensory_enhancement_program/app/view/main_page/category_search_page.dart';
+// import 'package:multi_sensory_enhancement_program/app/view/child/contents_page.dart';
+// import 'package:multi_sensory_enhancement_program/app/view/child/preview_page.dart';
+// void main() {
+//   runApp(const MyApp());
+// }
+//
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
+//
+//   // build메소드는 구현한 UI위젯들을 화면에 출력될 수 있도록 리턴해준다.
+//   @override
+//   // 여기서 context는 이 MyApp을 부르는 부모 위젯의 위치 정보를 담고 있다.
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//         title: '다감각 향상 프로그램',
+//         debugShowCheckedModeBanner: false,
+//         // initialRoute는 멀티 페이지 이동을 할때, 화면에 제일 처음 출력되는 라우트를 불러오는 역할을 한다.
+//         initialRoute: '/main',
+//         routes: {
+//           '/main': (context) => const MainPage(),
+//           '/preview': (context) {
+//             final routeSettings = ModalRoute.of(context)!.settings;
+//             final args = routeSettings.arguments as Map<String, int>? ?? {};
+//             return PreviewPage(
+//               level: args['level'] ?? 1, // 기본값을 제공
+//               category: args['category'] ?? 1, // 기본값을 제공
+//             );
+//           },
+//           '/contents': (context) {
+//             final routeSettings = ModalRoute.of(context)!.settings;
+//             final args = routeSettings.arguments as Map<String, int>? ?? {};
+//             return ContentsPage(
+//               level: args['level'] ?? 1, // 기본값을 제공
+//               category: args['category'] ?? 1, // 기본값을 제공
+//             );
+//           },
+//           '/category': (context) {
+//             final routeSettings = ModalRoute.of(context)!.settings;
+//             final args = routeSettings.arguments as Map<String, int>? ?? {};
+//             return CategoryPage(
+//               level: args['level'] ?? 1, // 기본값을 제공
+//             );
+//           },
+//           '/category_search': (context) {
+//             final routeSettings = ModalRoute.of(context)!.settings;
+//             final args = routeSettings.arguments as Map<String, String>? ?? {};
+//             return CategorySearchPage(
+//               searchText: args['searchText'] ?? "", // 기본값을 제공
+//             );
+//           },
+//         }
+//     );
+//   }
+// }
+
+
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart'; // 추가: 시스템 UI 오버레이를 제어하기 위해 필요한 패키지
 import 'package:multi_sensory_enhancement_program/app/view/main_page/main_page.dart';
 import 'package:multi_sensory_enhancement_program/app/view/main_page/category_page.dart';
 import 'package:multi_sensory_enhancement_program/app/view/main_page/category_search_page.dart';
 import 'package:multi_sensory_enhancement_program/app/view/child/contents_page.dart';
 import 'package:multi_sensory_enhancement_program/app/view/child/preview_page.dart';
+
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky); // 추가: 상태바와 내비게이션 바를 숨김
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // build메소드는 구현한 UI위젯들을 화면에 출력될 수 있도록 리턴해준다.
   @override
-  // 여기서 context는 이 MyApp을 부르는 부모 위젯의 위치 정보를 담고 있다.
   Widget build(BuildContext context) {
     return MaterialApp(
         title: '다감각 향상 프로그램',
         debugShowCheckedModeBanner: false,
-        // initialRoute는 멀티 페이지 이동을 할때, 화면에 제일 처음 출력되는 라우트를 불러오는 역할을 한다.
         initialRoute: '/main',
         routes: {
           '/main': (context) => const MainPage(),

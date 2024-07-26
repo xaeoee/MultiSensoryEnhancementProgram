@@ -60,32 +60,32 @@ abstract class AppValues {
         {
           "imageNumber": 2,
           "hints": [],
-          "name": "집 1"
+          "name": "아파트"
         },
         {
           "imageNumber": 5,
           "hints": [],
-          "name": "집 1+"
+          "name": "빨간지붕 집"
         },
         {
           "imageNumber": 6,
           "hints": ["st6_h1.png"],
-          "name": "집 2"
+          "name": "풍차 달린 집"
         },
         {
           "imageNumber": 7,
           "hints": ["st2_h1.png", "st4_h1.png"],
-          "name": "집 2+"
+          "name": "초인종이 있는 집"
         },
         {
           "imageNumber": 7,
           "hints": ["st2_h1.png", "st6_h1.png", "st6_h2.png"],
-          "name": "집 3"
+          "name": "계단 있는 집"
         },
         {
           "imageNumber": 10,
           "hints": ["st7_h1.png", "st10_h1.png"],
-          "name": "집 3+"
+          "name": "날아다니는 집"
         }
       ],[
         {
@@ -364,7 +364,7 @@ abstract class AppValues {
         {
           "imageNumber": 11,
           "hints": ["st1_h1.png", "st6_h1.png"],
-          "name": "캥거루"
+          "name": "우주선"
         }
       ], [
         {

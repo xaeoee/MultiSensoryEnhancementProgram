@@ -307,7 +307,7 @@ class _ContentsPageState extends State<ContentsPage>{
                           style: TextStyle(
                             fontFamily: 'Maplestory',
                             color: i == _current ? AppColors.white : AppColors.gray500,
-                            fontSize: 18, // 글자 크기를 약간 키움
+                            fontSize: 18, // Page Number 크기.
                             fontWeight: FontWeight.bold,
                           ),
                         ),
